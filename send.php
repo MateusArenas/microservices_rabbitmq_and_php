@@ -34,7 +34,7 @@ $msg = new AMQPMessage(
     $properties = array(
         'delivery_mode' => AMQPMessage::DELIVERY_MODE_PERSISTENT,
         // Cria um objeto AMQPTable para representar os cabeçalhos da aplicação
-        'application_headersz' => new AMQPTable([ 'x-reject-count' => 0 ]),
+        'application_headers' => new AMQPTable([ 'x-reject-count' => 0 ]),
     )
 );
 
